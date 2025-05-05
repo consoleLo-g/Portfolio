@@ -46,8 +46,8 @@ const Projects = () => {
           <h2>{project}</h2>
           <p className="text-blue-100 text-lg mt-2">
             {project === "PassGen"
-              ? "PassGen is a random password generator that allows users to create secure passwords for their online accounts."
-              : "PassOP is a password manager that helps users securely store and manage their passwords."}
+              ? "PassGen is a random password generator that allows users to create secure passwords for their online accounts. "
+              : "PassOP is a password manager that helps users securely store and manage their passwords. "}
             It uses ReactJS and Tailwind CSS for building a modern web
             application.
           </p>
@@ -56,7 +56,7 @@ const Projects = () => {
             {techStack.map((tech) => (
               <button
                 key={tech}
-                className="text-xl bg-[#05abfe] cursor-pointer hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-xl mt-2"
+                className="text-xl bg-blue-500 text-white font-bold py-2 px-4 rounded-xl mt-2"
               >
                 {tech}
               </button>

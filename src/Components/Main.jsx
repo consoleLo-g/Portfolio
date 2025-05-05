@@ -44,15 +44,10 @@ const Main = () => {
   return (
     <div className="flex justify-around mt-25">
       <div className="flex flex-col items-center justify-center">
-        {/* <img
-          className="invert opacity-99 flex flex-col items-center justify-center border min-h-64 w-[300px] rounded-2xl hover:cursor-pointer hover:scale-105 transition-transform duration-300"
-          src={imageSrc}
-          alt="image"
-        /> */}
         <h1 className="text-6xl font-bold">Gaurav Kumar</h1>
         <div className="mt-4 text-xl font-bold">
           <TypewriterEffect
-            text="Aspiring Web Developer"
+            text="Aspiring Developer"
             speed={100}
             reverseDelay={1500}
           />
