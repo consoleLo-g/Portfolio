@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "./Button";
 
 const Foot = () => {
   return (
@@ -12,9 +11,25 @@ const Foot = () => {
         Please feel free to contact me.
       </p>
 
-      <span className="my-3 bg-[]">gkgaurav343@gmail.com</span>
+      <span className="my-3 bg-[#000]">gkgaurav343@gmail.com</span>
       <div className="flex justify-between items-center py-7">
-        <Button />
+        <div className="flex justify-between items-center h-8 w-8 round-full  cursor-pointer ">
+          <img
+            src="./linkedin-logo.svg"
+            alt="logo"
+            className="mx-9 h-8 w-8 invert brightness-0 hover:scale-110 transition-transform duration-300 "
+          />
+          <img
+            src="./Gmail-logo.svg"
+            alt="logo"
+            className="m-9 h-8 w-8 invert brightness-0 hover:scale-110 transition-transform duration-300 "
+          />
+          <img
+            src="./github.svg"
+            alt="logo"
+            className="mx-9 h-8 w-8 invert brightness-0 hover:scale-110 transition-transform duration-300 "
+          />
+        </div>
       </div>
     </div>
   );
