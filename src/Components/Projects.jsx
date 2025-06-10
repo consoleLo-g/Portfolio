@@ -36,12 +36,14 @@ const Projects = () => {
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
-      <h1 className="text-4xl font-bold text-left mt-12">Projects</h1>
+      <h1 className="text-3xl sm:text-4xl md:text-5xl pt-20 sm:pt-70 md:pt-80 lg:pt-0 xl:pt-32  font-bold text-left mt-[13em] sm:mt-12">
+        Projects
+      </h1>
 
       {["PassGen", "PassOP"].map((project, index) => (
         <div
           key={index}
-          className="text-[#74c5ee] border-slate-900 rounded-2xl m-5 bg-[#00eff] text-2xl p-5"
+          className="text-[#74c5ee] border-slate-900 rounded-2xl m-5 bg-[#0000002c] text-2xl p-5"
         >
           <h2>{project}</h2>
           <p className="text-blue-100 text-lg mt-2">
@@ -56,7 +58,7 @@ const Projects = () => {
             {techStack.map((tech) => (
               <button
                 key={tech}
-                className="text-xl bg-blue-500 text-white font-bold py-2 px-4 rounded-xl mt-2"
+                className="text-sm sm:text-xl bg-blue-500 text-white font-bold py-2 px-4 rounded-xl mt-2"
               >
                 {tech}
               </button>

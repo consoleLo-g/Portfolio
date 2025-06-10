@@ -7,10 +7,12 @@ import Foot from "./Components/Foot";
 function App() {
   return (
     <>
-      <div className="test text-white px-30 h-full w-full items-center [background:radial-gradient(25%_125%_at_50%_10%,#000_40%,#00e5ff_800%)]">
+      <div className="test text-white h-full w-screen items-center [background:radial-gradient(25%_125%_at_50%_10%,#000_40%,#00e5ff_800%)]">
         <Nav />
-        <Main />
-        <Projects />
+        <div className="flex items-center justify-center flex-col gap-4">
+          <Main />
+          <Projects />
+        </div>
         <Foot />
       </div>
     </>

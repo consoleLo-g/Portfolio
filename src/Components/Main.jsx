@@ -37,23 +37,21 @@ const TypewriterEffect = ({ text, speed = 100, reverseDelay = 1000 }) => {
 };
 
 const Main = () => {
-  const [imageSrc, setImageSrc] = useState(
-    "https://th.bing.com/th/id/OIP.pXzVr3TrA-A7Tckezo43JwHaHa?w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
-  );
-
   return (
-    <div className="flex justify-around mt-25">
-      <div className="flex flex-col items-center justify-center">
-        <h1 className="text-6xl font-bold">Gaurav Kumar</h1>
-        <div className="mt-4 text-xl font-bold">
-          <TypewriterEffect
-            text="Aspiring Developer"
-            speed={100}
-            reverseDelay={1500}
-          />
+    <div className="flex flex-col justify-around mt-25 lg:flex-row sm:mt-0 sm:justify-around sm:items-center h-screen w-screen">
+      <div className="my-[12em] flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center">
+          <h1 className="text-5xl font-bold">Gaurav Kumar</h1>
+          <div className="mt-4 text-lg font-bold h-8">
+            <TypewriterEffect
+              text="Aspiring Developer"
+              speed={100}
+              reverseDelay={1500}
+            />
+          </div>
         </div>
       </div>
-      <div className="text-left mt-4 text-lg max-w-2xl">
+      <div className="flex flex-col text-left my-8 text-lg max-w-2xl">
         <h1 className="text-4xl font-bold mb-4">About Me</h1>
         <p>
           I'm Gaurav Kumar, an aspiring Web Developer passionate about building
