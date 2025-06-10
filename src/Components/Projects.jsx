@@ -45,7 +45,14 @@ const Projects = () => {
           key={index}
           className="text-[#74c5ee] border-slate-900 rounded-2xl m-5 bg-[#0000002c] text-2xl p-5"
         >
-          <h2>{project}</h2>
+          <h2
+            onClick={() =>
+              window.open("https://github.com/consoleLo-g/" + project, "_blank")
+            }
+            className="font-bold cursor-pointer"
+          >
+            {project}
+          </h2>
           <p className="text-blue-100 text-lg mt-2">
             {project === "PassGen"
               ? "PassGen is a random password generator that allows users to create secure passwords for their online accounts. "

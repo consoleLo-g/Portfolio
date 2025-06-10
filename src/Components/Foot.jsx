@@ -4,7 +4,9 @@ const Foot = () => {
   return (
     <div className="">
       <hr />
-      <h1 className="my-12 font-bold text-xl text-white">Contact</h1>
+      <h1 className="my-12 font-bold cursor-default text-xl text-white">
+        Contact
+      </h1>
       <p className="my-9 font-extralight">
         I'm currently looking for an internship in the field of web development.
         <br />
